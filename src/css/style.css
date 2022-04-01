@@ -1,0 +1,76 @@
+/*====================================================================================
+                            Google Font
+======================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+/*========================================================================================
+                                General Style
+=========================================================================================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #333;
+    color: #ffff;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:10px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    max-width: 450px;
+    resize: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #333;
+    font-size: 1.5rem;
+}
+.showText{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ffff;
+    margin: 10px;
+}
+.btn,.clearBtn {
+    margin-top: 15px;
+    padding:10px 15px;
+    border-radius: 5px;
+    background-color: beige;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: antiquewhite;
+    transition: 0.4s;
+}
+
+/*==================================================================
+                        Responsive Design
+====================================================================*/
+/*small device*/
+@media  screen and (max-width:470px) {
+    textarea{
+        max-width: 350px;
+    }
+    
+}
+
+/*extra small device*/
+@media  screen and (max-width:280px) {
+    textarea{
+        max-width: 250px;
+    }
+    
+}
